@@ -2,8 +2,23 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { ApiGetAnimes, AnimeGetParams } from '@api/anime'
+import { useEffect } from 'react'
 
 const Home: NextPage = () => {
+  useEffect(() => {
+    loadAnimes({
+      limit: 20
+    })
+  },[])
+  const loadAnimes = async (params: AnimeGetParams): Promise<void> => {
+    try {
+      const res = await ApiGetAnimes.get({ ...params })
+      console.log('res', res)
+    } catch (err) {
+
+    }
+  }
   return (
     <div className={styles.container}>
       <Head>
