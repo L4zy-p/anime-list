@@ -38,7 +38,7 @@ const Home: NextPage = () => {
         <div className='demo-wrap'>
           <img
             className='demo-bg'
-            src='/ani-background.jpg'
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/ani-background.jpg`}
             alt=''
           />
           <div className='demo-content'>

@@ -3,7 +3,7 @@ module.exports = {
   reactStrictMode: true,
   images: {
     loader: "imgix",
-    path: "https://kitsu.io/",
+    path: "",
     domains: ['media.kitsu.io'],
   },
   basePath: process.env.NEXT_PUBLIC_BASE_PATH,
