@@ -91,6 +91,7 @@ article {
 .card .text {
   flex: 1;
   width: 100%;
+  font-size: 40px;
 }
 
 .prevCard {
@@ -115,10 +116,14 @@ article {
 
 .leftBtn {
   left: -1rem;
+  font-size: 30px;
+  color: #fff;
 }
 
 .rightBtn {
   right: -1rem;
+  font-size: 30px;
+  color: #fff;
 }
 
 /* Paginator styles */

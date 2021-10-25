@@ -1,6 +1,29 @@
+.demo-wrap {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.demo-bg {
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 160%;
+}
+
+.demo-content {
+  position: relative;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+
 .first-section {
   width: 100%;
-  padding: 20px;
   height: 78vh;
   background-color: #007cef;
   display: flex;
@@ -9,7 +32,7 @@
 
 .second-section{
   width: 100%;
-  padding: 20px;
+  padding: 50px;
 }
 
 .nav-header {
