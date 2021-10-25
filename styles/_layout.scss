@@ -1,0 +1,21 @@
+.first-section {
+  width: 100%;
+  padding: 20px;
+  height: 78vh;
+  background-color: #007cef;
+  display: flex;
+  flex-direction: column;
+}
+
+.second-section{
+  width: 100%;
+  padding: 20px;
+}
+
+.nav-header {
+  color: #fff;
+  font-size: 20px;
+  .web-name {
+    font-size: 30px;
+  }
+}
