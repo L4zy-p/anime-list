@@ -1,39 +1,12 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import { Row, Col, Button, Avatar, Card } from 'antd'
+import { Row, Col, Button, Avatar } from 'antd'
 import { SearchOutlined } from '@ant-design/icons'
 import AnimeList from '@component/AnimeLIst'
 import Carousel from '@component/Carousel'
 
-const contentStyle: any = {
-  height: '500px',
-  color: '#fff',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: '#364d79',
-};
-
 const Home: NextPage = () => {
-  // useEffect(() => {
-  //   loadAnimes({
-  //     limit: 20
-  //   })
-  // },[])
-  // const loadAnimes = async (params: AnimeGetParams): Promise<void> => {
-  //   try {
-  //     const res = await ApiGetAnimes.get({ ...params })
-  //     console.log('res', res)
-  //   } catch (err) {
-
-  //   }
-  // }
   return (
     <>
-      <Head>
-        <title>Anime List</title>
-        <meta name='description' content='anime list next app' />
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
       <div className='first-section'>
         <div className='demo-wrap'>
           <img

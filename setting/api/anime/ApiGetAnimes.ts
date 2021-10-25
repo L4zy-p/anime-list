@@ -13,13 +13,6 @@ export interface AnimeGetParams {
 
 class _ApiGetAnimes {
   async get(params: AnimeGetParams) {
-    console.log('qs.stringify(params)', qs.stringify({
-      page:{
-        limit: params?.limit,
-        offset: params?.offset
-      },
-      sort: params?.sort 
-    }))
     const config: AxiosRequestConfig = {
       params: {
         page:{
